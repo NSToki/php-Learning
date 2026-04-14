@@ -170,8 +170,39 @@ do {
     $a++;
 
 } while ($a < count($learningLang));
- 
+
+
+//for
+for( $i = 0; $i < count($learningLang ); $i++ ){
+    echo " ", $i+1 ," ", $learningLang[$i];
+    echo"<br>";
+    
+}
+
+//Functions 
+function print5(){
+    echo "This is my function";
+}
+print5();
+
+function printNumber($number){
+    echo "<br> Your Number is ";
+    echo $number;
+}
+printNumber(5);
+
+echo "<br>";
+
+//String
+$str = "This is my string";
+echo $str;
+$lenn = strlen($str);
+echo "<br> The length of string is ". $lenn . ".Thanks for watching <br>";
+echo "The number of words in string is " . str_word_count($str) . "<br>";
+echo "The reverse of string is " . strrev($str) . "<br>";
 ?>
+
+
 
     
 </body>
